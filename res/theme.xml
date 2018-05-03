@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resource majorVersion="1" minorVersion="7" useXmlUI="false">
+    <image name="background.jpg"  />
+    <image name="background.png"  />
+    <image name="bla.jpg"  />
+    <image name="border.png"  />
+    <image name="bridge.jpg"  />
+    <image name="calendar-background.jpg"  />
+    <image name="calendar-separator.png"  />
+    <image name="card-bottom.png"  />
+    <image name="card.png"  />
+    <image name="contact-a.png"  />
+    <image name="contact-b.png"  />
+    <image name="contact-c.png"  />
+    <image name="dark-rect.png"  />
+    <legacyFont name="Font 1" />
+    <legacyFont name="Font 2" />
+    <legacyFont name="Font 3" />
+    <legacyFont name="Font 4" />
+    <legacyFont name="Font 5" />
+    <image name="griffith.jpg"  />
+    <image name="group-first.png"  />
+    <image name="group-last.png"  />
+    <image name="group-only.png"  />
+    <image name="group.png"  />
+    <image name="label_round-selected.png"  />
+    <image name="label_round.png"  />
+    <image name="large.jpg"  />
+    <image name="large2.jpg"  />
+    <image name="learn-codename-one.jpg"  />
+    <image name="logo.png"  />
+    <image name="profile_image.png"  />
+    <image name="progress.png"  />
+    <image name="selection-in-sidemenu.png"  />
+    <image name="sidemenu-background.jpg"  />
+    <image name="skate-park.jpg"  />
+    <image name="slide1.png"  />
+    <image name="test.png"  />
+    <theme name="Theme">
+        <val key="@includeNativeBool" value="true" />
+        <val key="SideCommand.bgColor" value="990099" />
+        <val key="SideCommand.derive" value="SideCommand" />
+        <val key="SideCommand.fgColor" value="ffffff" />
+        <font key="SideCommand.font" type="system" face="0" style="0" size="0" />
+        <val key="SideCommand.margin" value="1,0,0,0" />
+        <val key="SideCommand.padUnit" value="2,2,2,2" />
+        <val key="SideCommand.padding" value="3,3,3,3" />
+        <val key="SideCommand.press#bgColor" value="990099" />
+        <val key="SideCommand.press#derive" value="SideCommand.press" />
+        <val key="SideCommand.press#fgColor" value="ffffff" />
+        <val key="SideCommand.press#transparency" value="255" />
+        <val key="SideCommand.transparency" value="255" />
+        <val key="SideNavigationPanel.bgColor" value="8c5388" />
+        <val key="SideNavigationPanel.fgColor" value="ffffff" />
+        <val key="SideNavigationPanel.transparency" value="255" />
+        <val key="SidemenuTagline.align" value="1" />
+        <val key="SidemenuTagline.bgColor" value="8c5388" />
+        <val key="SidemenuTagline.fgColor" value="ffffff" />
+        <font key="SidemenuTagline.font" type="system" face="0" style="0" size="0" />
+        <val key="SidemenuTagline.margin" value="0,0,0,0" />
+        <val key="SidemenuTagline.padding" value="1,0,0,0" />
+        <val key="SidemenuTagline.transparency" value="255" />
+        <val key="StatusBarSideMenu.bgColor" value="8c5388" />
+        <val key="StatusBarSideMenu.fgColor" value="ffffff" />
+        <val key="StatusBarSideMenu.padding" value="0,0,0,0" />
+        <val key="press#bgColor" value="990099" />
+        <val key="press#derive" value="SideCommand.press" />
+        <val key="press#fgColor" value="ffffff" />
+        <val key="press#transparency" value="255" />
+        <val key="sel#bgColor" value="990099" />
+        <val key="sel#fgColor" value="ffffff" />
+        <val key="sel#transparency" value="255" />
+    </theme>
+    <image name="toolbar-profile-pic.png"  />
+    <image name="walthru-radio-selected.png"  />
+    <image name="walthru-radio-unselected.png"  />
+    <image name="welcome-background.jpg"  />
+    <image name="welcome-image-mask.png"  />
+    <image name="welcome-separator.png"  />
+</resource>
