@@ -27,6 +27,7 @@ import com.codename1.ui.layouts.LayeredLayout;
 import com.codename1.ui.plaf.Style;
 
 import com.codename1.ui.util.Resources;
+import souk.util.SessionUser;
 
 /**
  *
@@ -37,7 +38,10 @@ public class HomePage extends BaseForm {
     Form f;
 
     public HomePage(Resources res) {
+       
+        
         super("Souk El Medina", BoxLayout.y(),res);
+         System.out.println("Session "+SessionUser.getInstance());
        // f = new Form(BoxLayout.y());
         Tabs t = new Tabs();
         t.hideTabs();
