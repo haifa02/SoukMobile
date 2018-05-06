@@ -18,7 +18,8 @@ import souk.entite.Annonces;
  * @author HAYFA
  */
 public class AnnoncesServices {
-     public ArrayList<Annonces> getListAnnonces(String json) {
+
+    public ArrayList<Annonces> getListAnnonces(String json) {
 
         ArrayList<Annonces> lstAnnonces = new ArrayList<>();
 
@@ -34,11 +35,13 @@ public class AnnoncesServices {
                 Annonces e = new Annonces();
 
                 float id = Float.parseFloat(obj.get("id").toString());
+                float prix = Float.parseFloat(obj.get("prix").toString());
+                String titre = obj.get("titre").toString();
 
                 e.setId((int) id);
+                e.setTitre(titre);
+                e.setPrix(prix);
 
-               // e.setEtat(obj.get("state").toString());
-              //e.setNom(obj.get("name").toString());
                 System.out.println(e);
                 lstAnnonces.add(e);
 

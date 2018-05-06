@@ -44,9 +44,9 @@ public class UserServices {
             System.out.println(json);
             JSONParser j = new JSONParser();
 
-            Map<String, Object> etudiants = j.parseJSON(new CharArrayReader(json.toCharArray()));
+            Map<String, Object> userConnecter = j.parseJSON(new CharArrayReader(json.toCharArray()));
 
-            List<Map<String, Object>> list = (List<Map<String, Object>>) etudiants.get("root");
+            List<Map<String, Object>> list = (List<Map<String, Object>>) userConnecter.get("root");
 
             for (Map<String, Object> obj : list) {
                 User e = new User();
