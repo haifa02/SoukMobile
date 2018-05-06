@@ -42,7 +42,6 @@ public class HomePage extends BaseForm {
         
         super("Souk El Medina", BoxLayout.y(),res);
          System.out.println("Session "+SessionUser.getInstance());
-       // f = new Form(BoxLayout.y());
         Tabs t = new Tabs();
         t.hideTabs();
         t.setUIID("Container");

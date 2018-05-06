@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<resource majorVersion="1" minorVersion="7" useXmlUI="false">
+<resource majorVersion="1" minorVersion="9" useXmlUI="false">
     <image name="background.jpg"  />
     <image name="background.png"  />
     <image name="bla.jpg"  />
@@ -10,6 +10,7 @@
     <image name="calendar-separator.png"  />
     <image name="card-bottom.png"  />
     <image name="card.png"  />
+    <image name="commande.png"  />
     <image name="contact-a.png"  />
     <image name="contact-b.png"  />
     <image name="contact-c.png"  />
@@ -24,6 +25,7 @@
     <image name="group-last.png"  />
     <image name="group-only.png"  />
     <image name="group.png"  />
+    <ui name="GUI 1" />
     <image name="label_round-selected.png"  />
     <image name="label_round.png"  />
     <image name="large.jpg"  />
