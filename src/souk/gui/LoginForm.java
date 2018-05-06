@@ -129,7 +129,7 @@ public class LoginForm extends Form {
         btnSignIn.addActionListener((e) -> {
             UserServices ser = new UserServices();
             ConnectionRequest con = new ConnectionRequest();
-            String Url = "http://localhost:8000/souk/web/app_dev.php/api/user/" + getTxtlogin().getText() + "/" + getTxtPassword().getText();
+            String Url = "http://localhost/souk/web/app_dev.php/api/user/" + getTxtlogin().getText() + "/" + getTxtPassword().getText();
             System.out.println("" + Url);
             con.setUrl(Url);
             NetworkManager.getInstance().addToQueue(con);

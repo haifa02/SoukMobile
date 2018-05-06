@@ -23,7 +23,7 @@ public class UserServices {
     private Object ta;
   public void ajoutTask(User user) {
         ConnectionRequest con = new ConnectionRequest();
-        String Url = "http://localhost:8000/souk/web/app_dev.php/api/user/'"+ user.getUsername() + "'/'" + user.getPassword()+"'";
+        String Url = "http://localhost/souk/web/app_dev.php/api/user/'"+ user.getUsername() + "'/'" + user.getPassword()+"'";
         con.setUrl(Url);
 
         System.out.println("succes");
