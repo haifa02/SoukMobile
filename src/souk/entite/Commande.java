@@ -15,20 +15,20 @@ public class Commande {
     private int id;
     private Date dateCom;
     private int quantite;
-    private boolean etat;
+    private int etat;
 
 
     public Commande() {
     }
     
-    public Commande(int id, Date dateCom, int quantite, boolean etat) {
+    public Commande(int id, Date dateCom, int quantite, int etat) {
         this.id = id;
         this.dateCom = dateCom;
         this.quantite = quantite;
         this.etat = etat;
     }
 
-    public Commande(Date dateCom, int quantite, boolean etat) {
+    public Commande(Date dateCom, int quantite, int etat) {
         this.dateCom = dateCom;
         this.quantite = quantite;
         this.etat = etat;
@@ -58,11 +58,11 @@ public class Commande {
         this.quantite = quantite;
     }
 
-    public boolean isEtat() {
+    public int getEtat() {
         return etat;
     }
 
-    public void setEtat(boolean etat) {
+    public void setEtat(int etat) {
         this.etat = etat;
     }
     
