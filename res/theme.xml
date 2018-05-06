@@ -25,6 +25,7 @@
     <image name="group-last.png"  />
     <image name="group-only.png"  />
     <image name="group.png"  />
+    <ui name="GUI 1" />
     <image name="label_round-selected.png"  />
     <image name="label_round.png"  />
     <image name="large.jpg"  />
