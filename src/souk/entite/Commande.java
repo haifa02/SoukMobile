@@ -17,6 +17,10 @@ public class Commande {
     private int quantite;
     private boolean etat;
 
+
+    public Commande() {
+    }
+    
     public Commande(int id, Date dateCom, int quantite, boolean etat) {
         this.id = id;
         this.dateCom = dateCom;
