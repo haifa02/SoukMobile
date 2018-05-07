@@ -47,16 +47,18 @@ public class ReclamationsPage extends BaseForm{
 
     public ReclamationsPage(Resources res)  {
        
-        super("Annonces", BoxLayout.y(), res);
+        super("Reclamation", BoxLayout.y(), res);
         int id = SessionUser.getInstance().getId();
         ConnectionRequest con = new ConnectionRequest();
-        con.setUrl("http://localhost:8000/souk/web/app_dev.php/api/reclamations/liste/"+id);
+   
+        con.setUrl("http://localhost:8000/app_dev.php/api/reclamations/liste/"+id);
         NetworkManager.getInstance().addToQueue(con);
         con.addResponseListener(new ActionListener<NetworkEvent>() {
             @Override
             public void actionPerformed(NetworkEvent evt) {
                 ReclamationsServices ser = new ReclamationsServices();
                  List<Reclamations> list = ser.getListReclamations(new String(con.getResponseData()));
+                System.out.println(list);
                  for(Reclamations lst : list)
                  {
                      Date d =  lst.getDateRec();

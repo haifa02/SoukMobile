@@ -35,8 +35,15 @@ public class ReclamationsServices {
                 Reclamations rec = new Reclamations();
 
                 float id = Float.parseFloat(obj.get("id").toString());
+                float etat = Float.parseFloat(obj.get("etat").toString());
+                String contenu = obj.get("contenu").toString();
 
+                
+                
                 rec.setId((int) id);
+                rec.setEtat((int)etat);
+                rec.setContenu(contenu);
+                
 
                // e.setEtat(obj.get("state").toString());
               //e.setNom(obj.get("name").toString());

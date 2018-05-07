@@ -91,7 +91,8 @@ public class HomePage extends BaseForm {
 
             }
         });
-
+        int id = SessionUser.getInstance().getId();
+        System.out.println("id"+id);
         /*Container welcomeNoteArea = BoxLayout.encloseY(message,
          LayeredLayout.encloseIn(
                         

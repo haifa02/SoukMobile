@@ -34,5 +34,10 @@ public class SessionUser {
         }
         return INSTANCE;
     }
-    
+     public static  void setInstance(User u ) {
+       
+            INSTANCE = u;
+        
+      
+    }
     }
