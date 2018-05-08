@@ -51,10 +51,10 @@ public class CommandesPage extends BaseForm {
     public CommandesPage(Resources res)  {
        
         
-        super("Annonces", BoxLayout.y(), res);
+        super("Commandes", BoxLayout.y(), res);
         int id = SessionUser.getInstance().getId();
         ConnectionRequest con = new ConnectionRequest();
-        con.setUrl("http://localhost:8000/souk/web/app_dev.php/api/commandes/liste/"+id);
+        con.setUrl("http://localhost:8000/api/commandes/liste/8");
         NetworkManager.getInstance().addToQueue(con);
         con.addResponseListener(new ActionListener<NetworkEvent>() {
             @Override
@@ -65,6 +65,7 @@ public class CommandesPage extends BaseForm {
                  {
                      Date d =  lst.getDateCom();
                      String etat = "";
+                     System.out.println(lst.getEtat());
                      if ( lst.getEtat() == 0 ){
                          etat = "En attente" ;
                          

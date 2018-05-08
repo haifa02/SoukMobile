@@ -9,6 +9,7 @@ import com.codename1.io.CharArrayReader;
 import com.codename1.io.JSONParser;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import souk.entite.Annonces;
@@ -27,10 +28,11 @@ public class CommandeService {
         ArrayList<Commande> lstCommandes = new ArrayList<>();
 
         try {
-            System.out.println(json);
+            //System.out.println(json);
             JSONParser j = new JSONParser();
 
             Map<String, Object> coms = j.parseJSON(new CharArrayReader(json.toCharArray()));
+            
 
             List<Map<String, Object>> list = (List<Map<String, Object>>) coms.get("root");
 
@@ -38,9 +40,14 @@ public class CommandeService {
                 Commande c = new Commande();
 
                 float id = Float.parseFloat(obj.get("id").toString());
-
+                float etat = Float.parseFloat(obj.get("etat").toString());
+                String dat = String.valueOf(obj.get("dateCom"));
+               
+                System.out.println(dat);
+                 Date date = (Date) obj.get("dateCom");
                 c.setId((int) id);
-
+                c.setEtat((int)etat);
+                c.setDateCom(date);
                // e.setEtat(obj.get("state").toString());
               //e.setNom(obj.get("name").toString());
                 System.out.println(c);
